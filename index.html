@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GBO GAMES</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <button class="scroll-to-news-button top-center" onclick="scrollToNews()">NOTICIAS</button>
+     <!-- Botón "Ir a Juegos" centrado en la parte superior -->
+    <button class="scroll-to-juegos top-button" onclick="scrollTojuegos()">Ir a Juegos</button>
+        <!-- Título con fondo de imagen y efecto hover -->
+        <h1 class="title" id="gbo-title"><span class="hidden-text">GBO</span><img src="IMG/logo_small.png" alt="Fondo de Imagen"></h1>
+    </div>
+        <!-- Línea divisoria neon roja -->
+        <hr class="divider">
+    <!-- Sección 1: Carrusel -->
+    <section class="carousel">
+        <!-- Coloca aquí las rutas a tus imágenes -->
+    <div class="carousel" id="carousel">
+        <img src="IMG/Juegos carrusel/Project zomboid.jpg" alt="Imagen 1">
+        <img src="IMG/Juegos carrusel/PES.jpeg" alt="Imagen 2">
+        <img src="IMG/Juegos carrusel/Modos-Call-of-duty-Mobile.webp" alt="Imagen 3">
+        <img src="IMG/Juegos carrusel/ReAll.jpeg" alt="Imagen 4">
+        <img src="IMG/Juegos carrusel/PaintTheTownRed.jpg" alt="Imagen 5">
+    </div>
+    </section>
+    <!-- Línea divisoria neon roja -->
+    <hr class="divider">
+    <!-- Sección 2: Noticias sobre videojuegos -->
+    <div class="news-section" id="news">
+        <strong><h1>NOTICIAS</h1></strong>
+        <div class="news-container">
+            <div class="news">
+                <a href="https://store.steampowered.com/news/collection/steam/" target="_blank">
+                    <img src="IMG/iconos/steam news.png" alt="Noticia STEAM">
+                    <strong><p>NOTICIAS STEAM</p></strong>
+                </a>
+            </div>
+            <div class="news">
+                <a href="https://www.ea.com/es-es/games/library/pc-download#latest-games" target="_blank">
+                    <img src="IMG/iconos/ea noticias.png" alt="Noticia 2">
+                    <strong><p>ELECTRONIC ARTS NOVEDADES</p></strong>
+                </a>
+            </div>
+            <div class="news">
+                <a href="https://store.epicgames.com/es-ES/news" target="_blank">
+                    <img src="IMG/iconos/epic news.png" alt="Noticia 3">
+                    <strong><p>EPIC GAMES NOTICIAS</p></strong>
+                </a>
+            </div>
+            <div class="news">
+                <a href="https://www.riotgames.com/es/noticias" target="_blank">
+                    <img src="IMG/iconos/riot news.png" alt="Noticia 4">
+                    <strong><p>RIOT NOTICIAS</p></strong>
+                </a>
+            </div>
+            <div class="news">
+                <a href="https://www.unrealengine.com/es-ES/feed" target="_blank">
+                    <img src="IMG/iconos/unreal news.png" alt="Noticia 5">
+                    <strong><p>UNREAL ENGINE NEWS</p>
+                </a>
+            </div>
+            <div class="news">
+                <a href="https://www.ubisoft.com/en-gb/game/assassins-creed/news-updates" target="_blank">
+                    <img src="IMG/iconos/ubisoft news.png" alt="Noticia 5">
+                    <strong><p>UBISOFT NEWS</p>
+                </a>
+            </div>
+        </div>
+    </div>
+        <!-- Línea divisoria neon roja -->
+        <hr class="divider">
+        <div class="juegos" id="juegos">
+        <strong><h1>PERDIENDO EL TIEMPO</h1></strong>
+        <div class="juegos-container">
+         <strong><h2>DINO GOOGLE</h2></strong>
+            <iframe src="https://wayou.github.io/t-rex-runner/"
+            width="560" height="300" frameborder="0"  width="800" height="600" frameborder="0"></iframe>
+        <strong><h2>DOOM CLASIC</h2></strong>
+    <iframe src="https://archive.org/embed/DoomsharewareEpisode" width="560" height="384" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+    <strong><h2>DOUBLE DRAGON</h2></strong>
+    <iframe src="https://archive.org/embed/msdos_Double_Dragon_1988" width="560" height="384" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+    <strong><h2>SIGIL</h2></strong>
+    <iframe src="https://archive.org/embed/msdos_Sigil_2019" width="560" height="384" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+    <strong><h2>BUST-A-MOVE</h2></strong>
+    <iframe src="https://archive.org/embed/msdos_Bust-A-Move_1997" width="560" height="384" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+    <strong><h2>FIGHTING FORCE 2</h2></strong>
+    <iframe src="https://archive.org/embed/psx_fforce2" width="560" height="384" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+    <img src="IMG/CONTROL dbz.PNG" alt="FOTO CONTROLES">
+</div>
+    
+</div>
+ <script>
+        function scrollToStores() {
+            const storesSection = document.querySelector('.juegos');
+            storesSection.scrollIntoView({ behavior: 'smooth' });
+        }
+        
+        function scrollTojuegos() {
+            const juegosSection = document.querySelector('.juegos');
+            juegosSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+    <script>
+        <!---boton a noticias-->
+        function scrollToNews() {
+            const news = document.querySelector('.news');
+            news.scrollIntoView({,behavior: 'smooth' });
+        }
+    </script>
+    <script> 
+    <!--hace parte del boton a ir al inicio--->
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+    </script>
+    <!-- Línea divisoria neon roja -->
+    <hr class="divider">
+ <!-- Botón "Ir a Tiendas" centrado en la parte superior -->
+ <button class="scroll-to-stores-button top-button" onclick="scrollToStores()">TIENDAS</button>
+    <!-- Sección 3: Tiendas -->
+    <div class="stores">
+        <h1>TIENDAS</h1>
+        <a href="https://www.instant-gaming.com/es/?igr=operagx-browser" target="_blank"><img src="IMG/iconos/INSTANTGAMING.png" alt="INSTANT GAMING"></a>
+        <a href="https://store.steampowered.com" target="_blank"><img src="IMG/iconos/ICON_STEAM.png" alt="STEAM"></a>
+        <a href="https://www.g2a.com/es/?gname=operagx-corner" target="_blank"><img src="IMG/iconos/G2A.com-Logo.jpg" alt="G2A"></a>
+        <a href="https://store.epicgames.com/es-ES/" target="_blank"><img src="IMG/iconos/epic news.png" alt="EPIC"></a>
+        <a href="https://store.ubisoft.com/ofertas/home?lang=es_CO" target="_blank"><img src="IMG/iconos/ubisoft-icon.png" alt="UBISOFT"></a>
+        <a href="https://www.ea.com/es-es/games/library" target="_blank"><img src="IMG/iconos/EA TIENDA.png" alt="E A STORE"></a>
+    </div>
+    <div class="scroll-top-button">
+        <button onclick="scrollToTop()">INICIO</button>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="social-media">
+            <!-- Agrega enlaces a tus redes sociales -->
+            <a href="#" target="_blank">Facebook</a>
+            <a href="#" target="_blank">Twitter</a>
+            <a href="#" target="_blank">Instagram</a>
+        </div>
+        <div class="contact">
+            <p>Email: contacto@example.com</p>
+            <p>Teléfono: +123456789</p>
+        </div>
+        <div class="user-data">
+            <!-- Formulario para llenar datos de usuario -->
+            <form>
+                <input type="text" placeholder="Nombre">
+                <input type="email" placeholder="Email">
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+    <!-- Botón "Ir arriba" en el footer -->
+    </footer>
+    
+    <script>
+        function scrollToStores() {
+            const storesSection = document.querySelector('.stores');
+            storesSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+    <script>
+        function scrollToNews() {
+            const newsSection = document.querySelector('.news-section');
+            newsSection.scrollIntoView({ behavior: 'smooth' });
+        }
+
+    </script>
+</body>
+</html>

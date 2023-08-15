@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700&family=Fugaz+One&family=Handjet:wght@100&display=swap');
+
+body {
+    background-color: #111;
+    color: rgb(49, 255, 111);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    font-family: 'Tektur', sans-serif;
+}
+p {
+    font-family: 'Dosis', sans-serif;
+}
+/* Estilos para el contenedor centrado */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    background-image: url('https://img.freepik.com/free-photo/futuristic-background-with-colorful-glowing-abstract-neon-lights_181624-26329.jpg'); /* Ruta a tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Estilos para el título y efecto hover */
+
+.title {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.title img {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.title:hover img {
+    opacity: 0;
+}
+
+.hidden-text {
+    color: transparent;
+}
+/* Estilos para el carrusel */
+.carousel  {
+    overflow: hidden;
+    position: relative;
+    max-width: 1000%; /* Ajustar el ancho máximo según tus necesidades */
+    margin: 0 auto; /* Centrar el carrusel horizontalmente */
+}
+
+.carousel {
+    display: flex;
+    animation: scroll 5s linear infinite; /* Animación de desplazamiento */
+    max-width: 2000px; /* Ajustar el ancho del carrusel */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el carrusel */
+}
+
+.carousel.paused {
+    animation-play-state: paused; /* Pausar la animación */
+}
+
+.carousel img {
+    width: 20%; /* Ajustar las imágenes proporcionalmente */
+    height: auto;
+    transition: opacity 0.1s ease-in-out; /* Transición de opacidad */
+}
+
+/* Cambiar la opacidad al pasar el cursor */
+.carousel:hover img {
+    opacity: 1;
+}
+
+/* Animación de desplazamiento */
+@keyframes scroll {
+    0%, 100% { transform: translateX(0); }
+    20%, 80% { transform: translateX(1%); } /* Ajusta los porcentajes según tus necesidades */
+}
+/* Estilos para las secciones */
+section {
+    padding: 20px;
+}
+
+/* Estilos para la línea divisoria neon roja */
+.divider {
+    border: 1px solid #ff0000;
+    margin: 20px 0;
+}
+/* Estilos para el botón "Ir a Noticias" */
+.scroll-to-news-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.scroll-to-news-button:hover {
+    background-color: #cc0000;
+}
+/* Estilos para la sección de noticias */
+.news-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #5a1111;
+}
+
+.news-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+}
+
+.news {
+    width: 120px;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(124, 21, 21);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.news a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease-in-out;
+}
+
+.news a:hover {
+    color: #ff0000;
+}
+
+.news img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para el footer */
+
+/* Estilos para el botón "Ir arriba" */
+.scroll-top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.scroll-top-button button {
+    background-color: #ee0000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.scroll-top-button button:hover {
+    background-color: #504747;
+}
+
+/* Estilos para el botón "Ir arriba" en el footer */
+.footer-button {
+    bottom: auto;
+    top: 20px;
+}
+/* Estilos para el botón "Ir a Noticias" centrado en la parte superior */
+/* Estilos para el botón en el centro horizontal superior */
+.top-center {
+    position: fixed;
+    top: 92%;
+    left: 92%;
+    transform: translateX(-170%);
+}
+
+.top-button:hover {
+    background-color: #bbaaaa;
+}
+
+/* Estilos para el botón "Ir a Tiendas" centrado en la parte superior */
+.top-button {
+    position: fixed;
+    top: 92%;
+    left: 74%;
+    transform: translateX(-50%);
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.top-button:hover {
+    background-color: #cc0000;
+}
+
+/* Estilos para la sección de tiendas */
+.stores {
+    text-align: center;
+    padding: 30px 0;
+    border: 2px solid #ff0000;
+    border-radius: 10px;
+}
+
+.section-title {
+    margin-bottom: 30px;
+}
+
+.stores-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Estilos para los iconos de contenido redondeados */
+.stores img {
+    border-radius: 70%;
+    width: 80px; /* Cambiar el tamaño deseado */
+    height: 80px; /* Cambiar el tamaño deseado */
+}
+footer {
+    background-color: #222;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-media a {
+    color: white;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.contact p {
+    margin: 0;
+}
+
+.user-data input {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.user-data button {
+    padding: 5px 10px;
+    background-color: #ff0000;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Estilos adicionales para interacciones tipo gamer */
+/* Agrega aquí tus estilos personalizados para cada sección */
